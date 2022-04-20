@@ -1,0 +1,88 @@
+<!-- <table class="table table-bordered table-hover">
+
+  <thead class="thead-dark">
+    <tr>
+        <th> Task title</th>
+        <th> Task description </th>
+        <th> Done? </th>
+        <th> Delete </th>
+    </tr>
+
+</thead>
+
+<tbody  class="thead-dark">
+<div class="my-3" > 
+    <td><p [ngClass]="{'strike': !todo.active}">{{todo.title}}</p>   </td>
+     <td> <p [ngClass]="{'strike': !todo.active}">{{todo.desc}}</p>   </td>
+
+     <td>
+    <div class="form-group form-check" class=""my-3>
+        <input type="checkbox" class="form-check-input" id="todo{{i}}" (click)="onCheckboxClick(todo)" [checked]="!todo.active">
+        <label class="form-check-label" for="todo{{i}}">Done</label>
+      </div>
+    </td>
+    
+
+    <td>
+    <button class="btn btn-sm btn-danger" (click)="onClick(todo)">Delete</button>
+  </td>
+
+</div>  
+
+</tbody>
+
+</table> -->
+
+
+<!-- <div id="myDIV" class="header">
+  <h2>My To Do List</h2>
+  <input type="text" id="myInput" placeholder="Title...">
+  <span onclick="newElement()" class="addBtn">Add</span>
+</div>
+
+<ul id="myUL">
+  <li>Hit the gym</li>
+  <li class="checked">Pay bills</li>
+  <li>Meet George</li>
+  <li>Buy eggs</li>
+  <li>Read a book</li>
+  <li>Organize office</li>
+</ul>
+ -->
+
+
+
+ <table class="table table-bordered table-hover">
+
+  <thead class="thead-dark">
+    <tr>
+        <th> Task title</th>
+        <th> Task description </th>
+        <th> Done? </th>
+        <th> Delete </th>
+    </tr>
+
+</thead>
+
+<tbody class="thead-dark" >
+
+    <td><p [ngClass]="{'strike': !todo.active}">{{todo.title}}</p>   </td>
+     <td> <p [ngClass]="{'strike': !todo.active}">{{todo.desc}}</p>   </td>
+
+     <td>
+    <div class="form-group form-check" class=""my-3>
+        <input type="checkbox" class="form-check-input" id="todo{{i}}" (click)="onCheckboxClick(todo)" [checked]="!todo.active">
+        <label class="form-check-label" for="todo{{i}}">Done</label>
+      </div>
+    </td>
+    
+
+    <td>
+    <button class="btn btn-sm btn-danger" (click)="onClick(todo)">Delete</button>
+  </td>
+
+
+
+</tbody>
+
+</table>

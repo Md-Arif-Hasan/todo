@@ -1,0 +1,62 @@
+a {
+  float: right;
+}
+body {
+  background: rgb(238, 174, 202);
+  background: radial-gradient(
+    circle,
+    rgba(238, 174, 202, 1) 0%,
+    rgba(148, 187, 233, 1) 100%
+  );
+}
+.login {
+  height: calc(100vh - 50px);
+  /* display: flex;
+    flex-direction: column; */
+  align-items: center;
+  justify-content: center;
+  /* background: linear-gradient(
+      rgba(255, 255, 255, 0.5),
+      rgba(255, 255, 255, 0.5)
+    ),
+    url("https://i.ibb.co/ZLQ7qP7/8.jpg");
+
+  background-size: cover; */
+}
+a:link {
+  background-color: #b836f4;
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+/*----------------------------------*/
+
+.button {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.8);
+  background: rgb(145, 92, 182);
+  padding: 15px 40px;
+  border-radius: 4px;
+  font-weight: normal;
+  text-transform: uppercase;
+  transition: all 0.2s ease-in-out;
+}
+
+.glow-button:hover {
+  color: rgba(255, 255, 255, 1);
+  box-shadow: 0 5px 15px rgba(145, 92, 182, 0.4);
+
+  background: rgb(145, 92, 182);
+  padding: 20px 45px;
+  border-radius: 4px;
+  font-weight: normal;
+  text-transform: uppercase;
+  transition: all 0.4s ease-in-out;
+}
+
+.card{
+  margin-top: 15% ;
+}
